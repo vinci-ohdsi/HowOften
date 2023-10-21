@@ -25,6 +25,11 @@ connectionDetails <- DatabaseConnector::createConnectionDetails(
   password = keyring::key_get("buildPassword")
 )
 
+storeConnectionDetails(
+  connectionDetails = connectionDetails,
+  connectionDetailsReference = connectionDetailsReference
+)
+
 ##=========== END OF INPUTS ==========
 
 executionSettings <- Strategus::createCdmExecutionSettings(

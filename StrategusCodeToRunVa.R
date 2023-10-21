@@ -4,23 +4,28 @@ install.packages("remotes")
 
 remotes::install_github("OHDSI/Strategus")
 
+Sys.setenv(DATABASECONNECTOR_JAR_FOLDER="C:/Users/msuch/Documents/HowOften/jars")
+DatabaseConnector::downloadJdbcDrivers(dbms = "postgresql")
+
 library(Strategus)
 
 ##=========== START OF INPUTS ==========
-keyringName <- "HowOften"
-connectionDetailsReference <- "optum_extended_ses"
-workDatabaseSchema <- 'scratch_cknoll1'
-cdmDatabaseSchema <- 'cdm_optum_extended_ses_v2559'
-outputLocation <- 'D:/projects/HowOften/Strategus'
-resultsLocation <- 'D:/projects/HowOften/Results'
-minCellCount <- 5
+connectionDetailsReference <- "BUild"
+workDatabaseSchema <- "temp"
+cdmDatabaseSchema <- "cdm"
+outputLocation <- "C:/Users/msuch/Documents/HowOften/Strategus"
+resultsLocation <- "C:/Users/msuch/Documents/HowOften/Results"
+minCellCount <- 10
 cohortTableName <- "howoften_cohort"
 
+connectionDetails <- DatabaseConnector::createConnectionDetails(
+  dbms = "postgresql",
+  server = keyring::key_get("buildServer"),
+  user = keyring::key_get("buildUser"),
+  password = keyring::key_get("buildPassword")
+)
 
 ##=========== END OF INPUTS ==========
-##################################
-# DO NOT MODIFY BELOW THIS POINT
-##################################
 
 executionSettings <- Strategus::createCdmExecutionSettings(
   connectionDetailsReference = connectionDetailsReference,
@@ -32,7 +37,7 @@ executionSettings <- Strategus::createCdmExecutionSettings(
   minCellCount = minCellCount
 )
 
-executeAnalysis <- function(analysisFile, executionSettings, analysisName, outputLocation, resultsLocation, keyringName) {
+executeAnalysis <- function(analysisFile, executionSettings, analysisName, outputLocation, resultsLocation) {
 
   analysisSpecifications <- ParallelLogger::loadSettingsFromJson(
     fileName = analysisFile
@@ -41,8 +46,8 @@ executeAnalysis <- function(analysisFile, executionSettings, analysisName, outpu
   Strategus::execute(
     analysisSpecifications = analysisSpecifications,
     executionSettings = executionSettings,
-    executionScriptFolder = file.path(outputLocation, connectionDetailsReference, "strategusExecution"),
-    keyringName = keyringName
+    executionScriptFolder = file.path(outputLocation, connectionDetailsReference, "strategusExecution")
+  
   )
 
   # copy Results to final location
@@ -58,6 +63,9 @@ executeAnalysis <- function(analysisFile, executionSettings, analysisName, outpu
   return(NULL)
 
 }
+
+# Step 0: Execute Azza-blank Analysis to instantitate modules
+executeAnalysis("howoften_azza_blank.json", executionSettings, "azza", outputLocation, resultsLocation)
 
 # Step 1 : Execute Azza Analysis
 executeAnalysis("howoften_azza.json", executionSettings, "azza", outputLocation, resultsLocation, keyringName)

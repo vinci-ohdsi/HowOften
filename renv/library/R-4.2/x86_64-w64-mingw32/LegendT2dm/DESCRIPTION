@@ -1,0 +1,44 @@
+Package: LegendT2dm
+Title: Large-Scale Evidence Generation and Evaluation in a Network of
+        Databases
+Version: 2.1.0
+Author: Marc A. Suchard [aut, cre],
+    Martijn J. Schuemie [aut],
+    Patrick B. Ryan [aut],
+    Fan Bu [aut]
+Maintainer: Marc A. Suchard <msuchard@ucla.edu>
+Description: Large-Scale Evidence Generation and Evaluation in a Network of Databases
+    for Type 2 Diabetes (LEGEND-T2DM) studies the comparative effectiveness and safety
+    of second-line T2DM agents.  This systematic, large-scale data experiment follows
+    Open Science principles and aims to deliver reliable and actionable healthcare
+    information for T2DM stakeholders, including patients, their care-givers and
+    physicians.
+Depends: R (>= 4.0), DatabaseConnector (>= 3.0.0)
+Imports: Cyclops (>= 3.0), Andromeda (>= 0.3.2), SqlRender (>= 1.6.6),
+        FeatureExtraction (>= 3.0.1), CohortMethod (>= 4.0.0),
+        EmpiricalCalibration (>= 1.4.0), MethodEvaluation (>= 2.0.0),
+        ParallelLogger (>= 2.0.0), CohortDiagnostics (>= 1.1.0), CirceR
+        (>= 0.0.1), readr (>= 1.4.0), tibble, plyr, dplyr, meta, diffr,
+        purrr, survival, RJSONIO, zip
+Suggests: testthat, ROhdsiWebApi, shiny, shinydashboard, shinyWidgets,
+        DT, htmltools, scales, pool, tidyr, ggiraph, stringr,
+        LegendT2dmEvidenceExplorer, knitr, bookdown, kableExtra
+Remotes: ohdsi/FeatureExtraction, ohdsi/CohortMethod,
+        ohdsi/MethodEvaluation, ohdsi/CohortDiagnostics,
+        ohdsi/ROhdsiWebApi, ohdsi/PhenotypeLibrary, ohdsi/CirceR
+License: Apache License 2.0
+RoxygenNote: 7.1.1
+Encoding: UTF-8
+RemoteType: github
+RemoteHost: api.github.com
+RemoteRepo: LegendT2dm
+RemoteUsername: ohdsi-studies
+RemoteRef: HEAD
+RemoteSha: 127e5ab7b775645c9545b1f4a88ad38f6c77f04e
+GithubRepo: LegendT2dm
+GithubUsername: ohdsi-studies
+GithubRef: HEAD
+GithubSHA1: 127e5ab7b775645c9545b1f4a88ad38f6c77f04e
+NeedsCompilation: no
+Packaged: 2023-10-21 17:47:09 UTC; msuch
+Built: R 4.2.3; ; 2023-10-21 17:47:48 UTC; windows

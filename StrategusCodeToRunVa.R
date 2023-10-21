@@ -1,6 +1,8 @@
-# install the network package
-# install.packages('remotes')
-# remotes::install_github("OHDSI/Strategus")
+install.packages("renv")
+renv::init()
+install.packages("remotes")
+
+remotes::install_github("OHDSI/Strategus")
 
 library(Strategus)
 

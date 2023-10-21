@@ -1,0 +1,33 @@
+Package: ResultModelManager
+Title: Result Model Manager (RMM) for OHDSI packages
+Version: 0.5.1
+Authors@R: 
+    person("Jamie", "Gilbert", , "gilbert@ohdsi.org", role = c("aut", "cre"))
+Description: Database data model management utilities for OHDSI packages.
+License: Apache License
+Language: en-US
+Encoding: UTF-8
+VignetteBuilder: knitr
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3
+Depends: R (>= 4.1.0), R6, DatabaseConnector (>= 6.0.0)
+Imports: SqlRender, ParallelLogger, checkmate, DBI, pool, readr, zip,
+        dplyr, rlang, lubridate, fastmap
+Suggests: testthat (>= 3.0.0), RSQLite, withr, knitr, rmarkdown,
+        keyring
+Config/testthat/edition: 3
+RemoteType: github
+RemoteHost: api.github.com
+RemoteRepo: ResultModelManager
+RemoteUsername: ohdsi
+RemoteRef: HEAD
+RemoteSha: c1be23c5aa26508acb6b7f9d826aef285871db3e
+GithubRepo: ResultModelManager
+GithubUsername: ohdsi
+GithubRef: HEAD
+GithubSHA1: c1be23c5aa26508acb6b7f9d826aef285871db3e
+NeedsCompilation: no
+Packaged: 2023-10-21 17:32:47 UTC; msuch
+Author: Jamie Gilbert [aut, cre]
+Maintainer: Jamie Gilbert <gilbert@ohdsi.org>
+Built: R 4.2.3; ; 2023-10-21 17:32:48 UTC; windows

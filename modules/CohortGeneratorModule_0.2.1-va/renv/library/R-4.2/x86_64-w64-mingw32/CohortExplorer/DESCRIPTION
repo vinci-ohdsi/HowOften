@@ -1,0 +1,32 @@
+Package: CohortExplorer
+Type: Package
+Title: An R package with a Shiny viewer to explore profiles of patients in a
+    cohort
+Version: 0.0.11
+Date: 2022-02-23
+Authors@R: c( person("Gowtham", "Rao", email = "rao@ohdsi.org", role = c("aut", "cre")), person("Observational Health Data Science and Informatics", role = c("cph")) )
+Maintainer: Gowtham Rao <rao@ohdsi.org>
+Description: An R package with a Shiny viewer to explore profiles of patients in a cohort.
+Depends: DatabaseConnector (>= 5.0.0), R (>= 4.0.0)
+Imports: checkmate, clock, dplyr, lifecycle, ParallelLogger, rlang, stats
+Suggests: rmarkdown, testthat, knitr, withr, SqlRender
+License: Apache License
+RoxygenNote: 7.2.3
+VignetteBuilder: knitr
+Roxygen: list(markdown = TRUE)
+Encoding: UTF-8
+Language: en-US
+URL: https://ohdsi.github.io/CohortExplorer/,
+    https://github.com/OHDSI/CohortExplorer
+BugReports: https://github.com/OHDSI/CohortExplorer/issues
+Author: Gowtham Rao [aut, cre], Observational Health Data Science and Informatics [cph]
+Built: R 4.2.3; ; 2023-10-21 18:49:38 UTC; windows
+RemoteType: github
+RemoteHost: api.github.com
+RemoteRepo: CohortExplorer
+RemoteUsername: ohdsi
+RemoteRef: v0.0.11
+GithubHost: api.github.com
+GithubRepo: CohortExplorer
+GithubUsername: ohdsi
+GithubRef: v0.0.11

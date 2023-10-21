@@ -1,0 +1,29 @@
+Package: PhenotypeLibrary
+Type: Package
+Title: The OHDSI Phenotype library
+Version: 3.12.0
+Date: 2023-03-15
+Author: Gowtham Rao [aut, cre]
+Maintainer: Gowtham Rao <rao@ohdsi.org>
+Description: A repository to store the content of the OHDSI Phenotype library.
+Imports: checkmate, readr, dplyr, rlang
+Suggests: DatabaseConnector, reactable, testthat, rmarkdown, knitr
+License: Apache License
+RoxygenNote: 7.2.3
+Roxygen: list(markdown = TRUE)
+Encoding: UTF-8
+Language: en-US
+VignetteBuilder: knitr
+URL: https://ohdsi.github.io/PhenotypeLibrary/,
+    https://github.com/OHDSI/PhenotypeLibrary
+BugReports: https://github.com/OHDSI/PhenotypeLibrary/issues
+Built: R 4.2.3; ; 2023-10-21 19:13:41 UTC; windows
+RemoteType: github
+RemoteHost: api.github.com
+RemoteRepo: PhenotypeLibrary
+RemoteUsername: ohdsi
+RemoteRef: v3.12.0
+GithubHost: api.github.com
+GithubRepo: PhenotypeLibrary
+GithubUsername: ohdsi
+GithubRef: v3.12.0

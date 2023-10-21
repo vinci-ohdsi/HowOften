@@ -1,0 +1,5 @@
+cohort_id,cohort_name,generation_status,start_time,end_time,database_id
+862,"Earliest event of Alzheimer's disease derived from Imfeld, 2",COMPLETE,2023-10-21T20:03:16Z,2023-10-21T20:12:47Z,518569167
+863,"Cognitive impairment, incident",COMPLETE,2023-10-21T20:12:47Z,2023-10-21T20:12:48Z,518569167
+1071,persons at risk at start of year 2012-2022 with 365d prior observation,COMPLETE,2023-10-21T20:12:49Z,2023-10-21T20:13:47Z,518569167
+863001,"Cognitive impairment, incident",COMPLETE,2023-10-21T20:13:47Z,2023-10-21T20:13:48Z,518569167

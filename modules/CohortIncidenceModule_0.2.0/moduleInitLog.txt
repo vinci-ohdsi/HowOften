@@ -1,0 +1,4 @@
+2023-10-21 13:01:58	[Main thread]	WARN	renv	FUN	object 'C:/Users/msuch/Documents/HowOften/modules/CohortIncidenceModule_0.2.0/renv/library/R-4.2/x86_64-w64-mingw32/CohortIncidence/DESCRIPTION' not found
+2023-10-21 13:01:58	[Main thread]	WARN	renv	FUN	object 'C:/Users/msuch/Documents/HowOften/modules/CohortIncidenceModule_0.2.0/renv/library/R-4.2/x86_64-w64-mingw32/CohortIncidence/DESCRIPTION' not found
+2023-10-21 13:01:58	[Main thread]	WARN	renv	FUN	object 'C:/Users/msuch/Documents/HowOften/modules/CohortIncidenceModule_0.2.0/renv/library/R-4.2/x86_64-w64-mingw32/CohortIncidence/DESCRIPTION' not found
+2023-10-21 13:01:58	[Main thread]	WARN	renv	FUN	object 'C:/Users/msuch/Documents/HowOften/modules/CohortIncidenceModule_0.2.0/renv/library/R-4.2/x86_64-w64-mingw32/CohortIncidence/DESCRIPTION' not found

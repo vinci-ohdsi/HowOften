@@ -1,0 +1,75 @@
+2023-10-21 13:03:06	[Main thread]	INFO			Validating inputs
+2023-10-21 13:03:14	[Main thread]	INFO			Executing
+2023-10-21 13:03:14	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2023-10-21 13:03:15	[Main thread]	INFO	CohortGenerator	createCohortTables	Creating cohort tables
+2023-10-21 13:03:15	[Main thread]	INFO	CohortGenerator	logCreateTableMessage	- Created table temp.howoften_cohort
+2023-10-21 13:03:15	[Main thread]	INFO	CohortGenerator	logCreateTableMessage	- Created table temp.howoften_cohort_inclusion
+2023-10-21 13:03:15	[Main thread]	INFO	CohortGenerator	logCreateTableMessage	- Created table temp.howoften_cohort_inclusion_result
+2023-10-21 13:03:15	[Main thread]	INFO	CohortGenerator	logCreateTableMessage	- Created table temp.howoften_cohort_inclusion_stats
+2023-10-21 13:03:15	[Main thread]	INFO	CohortGenerator	logCreateTableMessage	- Created table temp.howoften_cohort_summary_stats
+2023-10-21 13:03:15	[Main thread]	INFO	CohortGenerator	logCreateTableMessage	- Created table temp.howoften_cohort_censor_stats
+2023-10-21 13:03:15	[Main thread]	INFO	CohortGenerator	createCohortTables	Creating cohort tables took 0.46secs
+2023-10-21 13:03:15	[Main thread]	TRACE	CohortGenerator	generateCohortSet	Initiating cluster consisting only of main thread
+2023-10-21 13:03:15	[Main thread]	INFO	CohortGenerator	FUN	1/4- Generating cohort: Earliest event of Alzheimer's disease derived from Imfeld, 2
+2023-10-21 13:12:47	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 9.52 mins
+2023-10-21 13:12:47	[Main thread]	INFO	CohortGenerator	FUN	2/4- Generating cohort: Cognitive impairment, incident
+2023-10-21 13:12:48	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.99 secs
+2023-10-21 13:12:49	[Main thread]	INFO	CohortGenerator	FUN	3/4- Generating cohort: persons at risk at start of year 2012-2022 with 365d prior observation
+2023-10-21 13:13:47	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 57.9 secs
+2023-10-21 13:13:47	[Main thread]	INFO	CohortGenerator	FUN	4/4- Generating cohort: Cognitive impairment, incident
+2023-10-21 13:13:48	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.552 secs
+2023-10-21 13:13:48	[Main thread]	INFO			Export data
+2023-10-21 13:13:49	[Main thread]	INFO	CohortGenerator	getCohortCounts	Counting cohorts took 1.42 secs
+2023-10-21 13:13:49	[Main thread]	WARN	CohortGenerator	insertInclusionRuleNames	No inclusion rules found in the cohortDefinitionSet
+2023-10-21 13:13:49	[Main thread]	INFO	CohortGenerator	getStatsTable	- Fetching data from howoften_cohort_inclusion
+2023-10-21 13:13:49	[Main thread]	INFO	CohortGenerator	exportStats	- Saving data to - C:/Users/msuch/Documents/HowOften/Strategus/BUild/strategusOutput/CohortGeneratorModule_1/cohort_inclusion.csv
+2023-10-21 13:13:49	[Main thread]	INFO	CohortGenerator	getStatsTable	- Fetching data from howoften_cohort_inclusion_result
+2023-10-21 13:13:50	[Main thread]	INFO	CohortGenerator	exportStats	- Saving data to - C:/Users/msuch/Documents/HowOften/Strategus/BUild/strategusOutput/CohortGeneratorModule_1/cohort_inc_result.csv
+2023-10-21 13:13:50	[Main thread]	INFO	CohortGenerator	getStatsTable	- Fetching data from howoften_cohort_inclusion_stats
+2023-10-21 13:13:50	[Main thread]	INFO	CohortGenerator	exportStats	- Saving data to - C:/Users/msuch/Documents/HowOften/Strategus/BUild/strategusOutput/CohortGeneratorModule_1/cohort_inc_stats.csv
+2023-10-21 13:13:50	[Main thread]	INFO	CohortGenerator	getStatsTable	- Fetching data from howoften_cohort_summary_stats
+2023-10-21 13:13:50	[Main thread]	INFO	CohortGenerator	exportStats	- Saving data to - C:/Users/msuch/Documents/HowOften/Strategus/BUild/strategusOutput/CohortGeneratorModule_1/cohort_summary_stats.csv
+2023-10-21 13:13:50	[Main thread]	INFO	CohortGenerator	getStatsTable	- Fetching data from howoften_cohort_censor_stats
+2023-10-21 13:13:50	[Main thread]	INFO	CohortGenerator	exportStats	- Saving data to - C:/Users/msuch/Documents/HowOften/Strategus/BUild/strategusOutput/CohortGeneratorModule_1/cohort_censor_stats.csv
+2023-10-21 13:13:50	[Main thread]	WARN			cannot rename file 'C:/Users/msuch/Documents/HowOften/Strategus/BUild/strategusOutput/CohortGeneratorModule_1/cohort_inclusion.csv' to 'C:/Users/msuch/Documents/HowOften/Strategus/BUild/strategusOutput/CohortGeneratorModule_1/cg_cohort_inclusion.csv', reason 'The system cannot find the file specified'
+2023-10-21 13:13:50	[Main thread]	WARN			cannot rename file 'C:/Users/msuch/Documents/HowOften/Strategus/BUild/strategusOutput/CohortGeneratorModule_1/cohort_inc_result.csv' to 'C:/Users/msuch/Documents/HowOften/Strategus/BUild/strategusOutput/CohortGeneratorModule_1/cg_cohort_inc_result.csv', reason 'The system cannot find the file specified'
+2023-10-21 13:13:50	[Main thread]	WARN			cannot rename file 'C:/Users/msuch/Documents/HowOften/Strategus/BUild/strategusOutput/CohortGeneratorModule_1/cohort_inc_stats.csv' to 'C:/Users/msuch/Documents/HowOften/Strategus/BUild/strategusOutput/CohortGeneratorModule_1/cg_cohort_inc_stats.csv', reason 'The system cannot find the file specified'
+2023-10-21 13:13:50	[Main thread]	WARN			cannot rename file 'C:/Users/msuch/Documents/HowOften/Strategus/BUild/strategusOutput/CohortGeneratorModule_1/cohort_summary_stats.csv' to 'C:/Users/msuch/Documents/HowOften/Strategus/BUild/strategusOutput/CohortGeneratorModule_1/cg_cohort_summary_stats.csv', reason 'The system cannot find the file specified'
+2023-10-21 13:13:50	[Main thread]	WARN			cannot rename file 'C:/Users/msuch/Documents/HowOften/Strategus/BUild/strategusOutput/CohortGeneratorModule_1/cohort_censor_stats.csv' to 'C:/Users/msuch/Documents/HowOften/Strategus/BUild/strategusOutput/CohortGeneratorModule_1/cg_cohort_censor_stats.csv', reason 'The system cannot find the file specified'
+2023-10-21 13:13:50	[Main thread]	WARN			cannot rename file 'C:/Users/msuch/Documents/HowOften/Strategus/BUild/strategusOutput/CohortGeneratorModule_1/cohort_count_neg_ctrl.csv' to 'C:/Users/msuch/Documents/HowOften/Strategus/BUild/strategusOutput/CohortGeneratorModule_1/cg_cohort_count_neg_ctrl.csv', reason 'The system cannot find the file specified'
+2023-10-21 13:13:50	[Main thread]	INFO			Results available at: C:/Users/msuch/Documents/HowOften/Strategus/BUild/strategusOutput/CohortGeneratorModule_1/cohortGeneratorResults.zip
+2023-10-21 13:16:07	[Main thread]	INFO			Validating inputs
+2023-10-21 13:16:14	[Main thread]	INFO			Executing
+2023-10-21 13:16:14	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2023-10-21 13:16:15	[Main thread]	INFO	CohortGenerator	createCohortTables	Table "howoften_cohort" already exists and in incremental mode, so not recreating it.
+2023-10-21 13:16:15	[Main thread]	INFO	CohortGenerator	createCohortTables	Table "howoften_cohort_inclusion" already exists and in incremental mode, so not recreating it.
+2023-10-21 13:16:15	[Main thread]	INFO	CohortGenerator	createCohortTables	Table "howoften_cohort_inclusion_result" already exists and in incremental mode, so not recreating it.
+2023-10-21 13:16:15	[Main thread]	INFO	CohortGenerator	createCohortTables	Table "howoften_cohort_inclusion_stats" already exists and in incremental mode, so not recreating it.
+2023-10-21 13:16:15	[Main thread]	INFO	CohortGenerator	createCohortTables	Table "howoften_cohort_summary_stats" already exists and in incremental mode, so not recreating it.
+2023-10-21 13:16:15	[Main thread]	INFO	CohortGenerator	createCohortTables	Table "howoften_cohort_censor_stats" already exists and in incremental mode, so not recreating it.
+2023-10-21 13:16:15	[Main thread]	TRACE	CohortGenerator	generateCohortSet	Initiating cluster consisting only of main thread
+2023-10-21 13:16:15	[Main thread]	INFO	CohortGenerator	isTaskRequired	Skipping cohortId = '862' because it is unchanged from earlier run
+2023-10-21 13:16:15	[Main thread]	INFO	CohortGenerator	isTaskRequired	Skipping cohortId = '863' because it is unchanged from earlier run
+2023-10-21 13:16:15	[Main thread]	INFO	CohortGenerator	isTaskRequired	Skipping cohortId = '1071' because it is unchanged from earlier run
+2023-10-21 13:16:15	[Main thread]	INFO	CohortGenerator	isTaskRequired	Skipping cohortId = '863001' because it is unchanged from earlier run
+2023-10-21 13:16:15	[Main thread]	INFO			Export data
+2023-10-21 13:16:17	[Main thread]	INFO	CohortGenerator	getCohortCounts	Counting cohorts took 1.55 secs
+2023-10-21 13:16:17	[Main thread]	WARN	CohortGenerator	insertInclusionRuleNames	No inclusion rules found in the cohortDefinitionSet
+2023-10-21 13:16:17	[Main thread]	INFO	CohortGenerator	getStatsTable	- Fetching data from howoften_cohort_inclusion
+2023-10-21 13:16:17	[Main thread]	INFO	CohortGenerator	exportStats	- Saving data to - C:/Users/msuch/Documents/HowOften/Strategus/BUild/strategusOutput/CohortGeneratorModule_1/cohort_inclusion.csv
+2023-10-21 13:16:17	[Main thread]	INFO	CohortGenerator	getStatsTable	- Fetching data from howoften_cohort_inclusion_result
+2023-10-21 13:16:17	[Main thread]	INFO	CohortGenerator	exportStats	- Saving data to - C:/Users/msuch/Documents/HowOften/Strategus/BUild/strategusOutput/CohortGeneratorModule_1/cohort_inc_result.csv
+2023-10-21 13:16:17	[Main thread]	INFO	CohortGenerator	getStatsTable	- Fetching data from howoften_cohort_inclusion_stats
+2023-10-21 13:16:18	[Main thread]	INFO	CohortGenerator	exportStats	- Saving data to - C:/Users/msuch/Documents/HowOften/Strategus/BUild/strategusOutput/CohortGeneratorModule_1/cohort_inc_stats.csv
+2023-10-21 13:16:18	[Main thread]	INFO	CohortGenerator	getStatsTable	- Fetching data from howoften_cohort_summary_stats
+2023-10-21 13:16:18	[Main thread]	INFO	CohortGenerator	exportStats	- Saving data to - C:/Users/msuch/Documents/HowOften/Strategus/BUild/strategusOutput/CohortGeneratorModule_1/cohort_summary_stats.csv
+2023-10-21 13:16:18	[Main thread]	INFO	CohortGenerator	getStatsTable	- Fetching data from howoften_cohort_censor_stats
+2023-10-21 13:16:18	[Main thread]	INFO	CohortGenerator	exportStats	- Saving data to - C:/Users/msuch/Documents/HowOften/Strategus/BUild/strategusOutput/CohortGeneratorModule_1/cohort_censor_stats.csv
+2023-10-21 13:16:18	[Main thread]	WARN			cannot rename file 'C:/Users/msuch/Documents/HowOften/Strategus/BUild/strategusOutput/CohortGeneratorModule_1/cohort_generation.csv' to 'C:/Users/msuch/Documents/HowOften/Strategus/BUild/strategusOutput/CohortGeneratorModule_1/cg_cohort_generation.csv', reason 'The system cannot find the file specified'
+2023-10-21 13:16:18	[Main thread]	WARN			cannot rename file 'C:/Users/msuch/Documents/HowOften/Strategus/BUild/strategusOutput/CohortGeneratorModule_1/cohort_inclusion.csv' to 'C:/Users/msuch/Documents/HowOften/Strategus/BUild/strategusOutput/CohortGeneratorModule_1/cg_cohort_inclusion.csv', reason 'The system cannot find the file specified'
+2023-10-21 13:16:18	[Main thread]	WARN			cannot rename file 'C:/Users/msuch/Documents/HowOften/Strategus/BUild/strategusOutput/CohortGeneratorModule_1/cohort_inc_result.csv' to 'C:/Users/msuch/Documents/HowOften/Strategus/BUild/strategusOutput/CohortGeneratorModule_1/cg_cohort_inc_result.csv', reason 'The system cannot find the file specified'
+2023-10-21 13:16:18	[Main thread]	WARN			cannot rename file 'C:/Users/msuch/Documents/HowOften/Strategus/BUild/strategusOutput/CohortGeneratorModule_1/cohort_inc_stats.csv' to 'C:/Users/msuch/Documents/HowOften/Strategus/BUild/strategusOutput/CohortGeneratorModule_1/cg_cohort_inc_stats.csv', reason 'The system cannot find the file specified'
+2023-10-21 13:16:18	[Main thread]	WARN			cannot rename file 'C:/Users/msuch/Documents/HowOften/Strategus/BUild/strategusOutput/CohortGeneratorModule_1/cohort_summary_stats.csv' to 'C:/Users/msuch/Documents/HowOften/Strategus/BUild/strategusOutput/CohortGeneratorModule_1/cg_cohort_summary_stats.csv', reason 'The system cannot find the file specified'
+2023-10-21 13:16:18	[Main thread]	WARN			cannot rename file 'C:/Users/msuch/Documents/HowOften/Strategus/BUild/strategusOutput/CohortGeneratorModule_1/cohort_censor_stats.csv' to 'C:/Users/msuch/Documents/HowOften/Strategus/BUild/strategusOutput/CohortGeneratorModule_1/cg_cohort_censor_stats.csv', reason 'The system cannot find the file specified'
+2023-10-21 13:16:18	[Main thread]	WARN			cannot rename file 'C:/Users/msuch/Documents/HowOften/Strategus/BUild/strategusOutput/CohortGeneratorModule_1/cohort_count_neg_ctrl.csv' to 'C:/Users/msuch/Documents/HowOften/Strategus/BUild/strategusOutput/CohortGeneratorModule_1/cg_cohort_count_neg_ctrl.csv', reason 'The system cannot find the file specified'
+2023-10-21 13:16:18	[Main thread]	INFO			Results available at: C:/Users/msuch/Documents/HowOften/Strategus/BUild/strategusOutput/CohortGeneratorModule_1/cohortGeneratorResults.zip

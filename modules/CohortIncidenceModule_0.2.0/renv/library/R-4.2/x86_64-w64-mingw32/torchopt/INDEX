@@ -1,0 +1,11 @@
+optim_adabelief         Adabelief optimizer
+optim_adabound          Adabound optimizer
+optim_adahessian        Adahessian optimizer
+optim_adamw             AdamW optimizer
+optim_madgrad           MADGRAD optimizer
+optim_nadam             Nadam optimizer
+optim_qhadam            QHAdam optimization algorithm
+optim_radam             AdamW optimizer
+optim_swats             SWATS optimizer
+optim_yogi              Yogi optimizer
+test_optim              Test optimization function

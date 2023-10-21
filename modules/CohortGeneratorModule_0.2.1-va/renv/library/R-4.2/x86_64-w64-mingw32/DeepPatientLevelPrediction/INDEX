@@ -1,0 +1,19 @@
+Dataset                 A torch dataset
+DeepPatientLevelPrediction
+                        DeepPatientLevelPrediction
+EarlyStopping           Earlystopping class
+Estimator               Estimator
+batchToDevice           sends a batch of data to device
+fitEstimator            fitEstimator
+gridCvDeep              gridCvDeep
+lrFinder                Find learning rate that decreases loss the most
+predictDeepEstimator    predictDeepEstimator
+setDefaultResNet        setDefaultResNet
+setDefaultTransformer   Create default settings for a non-temporal
+                        transformer
+setEstimator            setEstimator
+setMultiLayerPerceptron
+                        setMultiLayerPerceptron
+setResNet               setResNet
+setTransformer          create settings for training a non-temporal
+                        transformer

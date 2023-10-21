@@ -1,0 +1,63 @@
+---
+title: "Guidance on writing clinical description for Condition Phenotypes"
+author: "Gowtham A. Rao"
+date: "`r Sys.Date()`"
+output:
+  html_document:
+    number_sections: no
+    toc: no  
+  pdf_document: 
+    toc: no     
+vignette: >
+  %\VignetteIndexEntry{Guidance on writing clinical description for Condition Phenotypes}
+  %\VignetteEncoding{UTF-8}    
+  %\VignetteEngine{knitr::rmarkdown}
+---
+
+```{r, echo = FALSE, message = FALSE}
+knitr::opts_chunk$set(
+  cache = FALSE,
+  comment = "#>",
+  error = FALSE,
+  tidy = FALSE
+)
+```
+
+[PhenotypeLibrary](https://github.com/OHDSI/PhenotypeLibrary) is part of [HADES](https://ohdsi.github.io/Hades/)
+
+*This document is a DRAFT guidance.*
+
+**Note (caution):** We are not re-writing a medical textbook or chapter. The content is designed to help the phenotyper, i.e. the person who develops and evaluates the cohort definition. If the phenotyper is building cohorts using Atlas - the clinical description is expected to guide the entry event criteria, inclusion rules and exit criteria.
+
+## Start with one or more Authoritative source(s):
+ * We ask that you start by referencing (e.g., by providing an internet hyperlink to) an authoritative source that guided your understanding of the phenotype clinical description. This is expected to be written by clinical subject matter experts in the field of your phenotype. It almost uses medical Jargon like ‘Etiology’, ‘Pathogenesis’, ‘Evaluation’, ‘Treatment’, ‘Prognosis’.
+ 
+ * Because OHDSI subscribes to Open Science and international collaboration - we ask that you try to prioritize authoritative sources that are publicly and openly available. Example of such authoritative sources include NIH National Library of Medicine Stat Pearls [StatPearls [Internet]. Treasure Island (FL): StatPearls Publishing; 2022 Jan-. Available from: https://www.ncbi.nlm.nih.gov/books/NBK430685/] (https://www.ncbi.nlm.nih.gov/books/NBK430685/) 
+ 
+ * We then ask that you write a short/succinct abstraction of the referenced authoritative source, but written in the context of helping a phenotyper. Again, we are not re-writing a medical text book but only abstracting key ideas that we should look for in persons with the phenotype. The purpose is to aid phenotype development and evaluation. e.g. the clinical description would convey that large number of individuals in the myocardial infarction phenotype maybe expected to have chest pain or tests for troponin.
+ 
+## Summary of Authoritative source: 
+
+We ask that you summarize using the following headings/components. This is optional but is expected in good submissions.
+
+ * **Overview:** Key summary of the clinical concept.
+ 
+ * **Presentation:** observations from a clinician who sees persons with the clinical concept, including signs and symptoms.
+ 
+ * **Diagnostics Evaluation:** clinical workup done to confirm or refute the presence of the clinical concept in a person, including diagnostic procedures and measurements. (Formerly we used to call this Assessment.), These are the things a clinician would like to do to determine etiology, disease state / extent, and disease complications.
+ 
+ * **Therapy Plan:** treatment performed to manage the risks to a person from the clinical concept, including therapeutic procedures, surgeries, and drug exposures (where applicable). Pharmacologic, non-pharmacologic clinical actions.
+ 
+ * **Prognosis:** statements that indicate the duration the clinical concept is expected to persist in a person. Please try to answer these three questions as they help with defining cohort end date:
+ - Can the person fully recover marking the end of an episode i.e., is full recovery possible, or is it considered life long?
+ Yes/No
+ - If it’s not lifelong and recovery/end of condition is possible – on **median**
+     - What is the minimum (median) duration that persons are expected to have the disease? Example: neutropenia is observed on a median for a minimum of 7 days.
+     - What is the maximum (median) duration that persons are expected to have the condition? Example: neutropenia is observed on a median for a maximum of 365 days.
+ - If end of condition is possible, can a new episode of the condition independently re-occur in the same person after full recovery from prior independent episode? 
+ 
+ * **Disqualifiers:** 
+ - A dis-qualifier is a mutually exclusive idea i.e. an argument should be made that when this construct is present in the person then they cannot by definition have the phenotype of interest. i.e. this is not just a risk factor (confounder) that predisposes a person to be at higher/lower risk for the phenotype. Example: if the phenotype is Myocardial infarction among non-diabetic persons - then diabetes is a disqualifier. 
+ 
+ * **Strengtheners:**
+ - conditions, when present, increase the likelihood that the person has the clinical idea. The observation of established risk factors in the baseline period, or treatments for the condition after index date are considered strengtheners. A positive re-challenge, where the phenotype is observed to start again after exposure to the risk factor.

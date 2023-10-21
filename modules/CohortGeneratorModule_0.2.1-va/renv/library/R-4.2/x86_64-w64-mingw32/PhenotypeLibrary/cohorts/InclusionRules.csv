@@ -1,0 +1,291 @@
+cohortName,ruleSequence,ruleName,cohortId
+123,0,>=365 prior enrollment,123
+13,0,"Exclude persons with muscle pain that may be explained by injury, ischemia or chronic systemic inflammation",13
+134,0,has at least one condition record of ADHD,134
+19,0,Exclude if concomitant non acute pneumonia,19
+205,0,Washout period of 365 days,205
+205,1,Should have Acute Pancreatitis within 1 day,205
+205,2,Should NOT have Chronic Pancreatitis on or before Acute Pancreatitis,205
+205,3,Should NOT have Hereditary Pancreatitis any time,205
+206,0,Washout period of 365 days,206
+206,1,Should have Acute Pancreatitis within 1 day,206
+206,2,Should NOT have Chronic Pancreatitis on or before Acute Pancreatitis,206
+206,3,Should NOT have Hereditary Pancreatitis any time,206
+206,4,Should NOT have Alcoholic Pancreatitis on or before Acute Pancreatitis,206
+206,5,Should NOT have evidence Alcoholism or Severe Alcohol related disorders in past 1 year,206
+206,6,Should NOT have evidence Alcohol intoxication in past 30 days,206
+206,7,Should NOT have evidence Cholangitis or Cholecystitis in past 1 year,206
+206,8,Should NOT have evidence Biliary Tract Disease in past in past 1 year,206
+206,9,Should NOT have evidence of recent Endoscopic retrograde cholangiopancreatography,206
+206,10,Should NOT have evidence of Intestinal ischemia including acute mesenteric ischemia,206
+206,11,Should NOT have evidence of Gastrointestinal perforation,206
+206,12,Should NOT have evidence of Intestinal Obstruction,206
+207,0,No congenital or genetic anemia,207
+207,1,No Constitutional Pure Red Cell Aplasia,207
+207,2,No normal Hemoglobin measurement in blood on index date,207
+207,3,No normal Hematocrit measurement in blood on index date,207
+207,4,No Polycythemia on index date,207
+207,5,No Bone marrow transplant,207
+208,0,Inpatient Visit,208
+208,1,No Normal Neutrophil count (ANC ),208
+209,0,Washout period - 365 days,209
+209,1,No normal low Hemoglobin measurement in blood on index date,209
+209,2,No Polycythemia on index date,209
+209,3,No Hereditary hemoglobinopathy,209
+209,4,No Erythrocyte membrane defect,209
+209,5,No Hereditary hemolytic anemia,209
+209,6,No Glucose-6-phosphate dehydrogenase deficiency anemia,209
+209,7,No Inherited disorder of porphyrin metabolism,209
+209,8,No Paroxysmal nocturnal hemoglobinuria,209
+210,0,No normal low Hemoglobin measurement in blood on index date,210
+210,1,No Polycythemia on index date,210
+210,2,No Hereditary hemoglobinopathy,210
+210,3,No Erythrocyte membrane defect,210
+210,4,No Hereditary hemolytic anemia,210
+210,5,No Inherited disorder of porphyrin metabolism,210
+210,6,No Paroxysmal nocturnal hemoglobinuria,210
+211,0,"No Congenital or Genetic Neutropenia, Leukopenia or Agranulocytosis",211
+211,1,No Congenital or Genetic anemia,211
+211,2,No Congenital or Genetic Thrombocytopenia,211
+213,0,"No congenital or genetic neutropenia, leukopenia or agranulocytosis",213
+213,1,No Normal Neutrophil count on index date,213
+213,2,No Neutrophilia on index date,213
+214,0,"No congenital or genetic neutropenia, leukopenia or agranulocytosis",214
+214,1,No Normal Neutrophil count on index date,214
+214,2,No Neutrophilia on index date,214
+214,3,No Pancytopenia or bone marrow disorder within 7 days,214
+214,4,No Anemia diagnosis within 7 days,214
+214,5,No low Hemoglobin measurement in blood within 7 days,214
+214,6,No low Hematocrit measurement in blood within 7 days,214
+214,7,No thrombocytopenia within 7 days,214
+214,8,No low Platelet measurement in blood within 7 days,214
+215,0,No congenital or genetic thrombocytopenia,215
+215,1,No Platelet count > 100 on index date,215
+215,2,No thrombocytosis on index date,215
+215,3,No Pancytopenia or bone marrow disorder diagnosis within 7 days,215
+215,4,"No Neutropenia, Agranulocytosis diagnosis within 7 days",215
+215,5,No low neutrophil count within 7 days,215
+215,6,No Anemia diagnosis within 7 days,215
+215,7,No low Hemoglobin measurement in blood within 7 days,215
+216,0,365 days  washout period ,216
+216,1,No congenital or genetic thrombocytopenia,216
+216,2,No Platelet count > 100 on index date,216
+216,3,No thrombocytosis on index date,216
+216,4,No Hypersplenism,216
+216,5,No Antiphospholipid syndrome,216
+216,6,No Paroxysmal nocturnal hemoglobinuria,216
+216,7,No Hemolytic uremic syndrome,216
+216,8,No Thrombotic microangiopathy,216
+216,9,"No major autoimmune disorders (RA, MS, Psoriasis, SLE, CD, UC, Addisons, Graves, Sjogren, Myasthenia Gravis, Vasculitis, Celiac)",216
+216,10,No Chronic Liver Disease,216
+216,11,No Pregnancy related HELLP syndrome (in past 3 months),216
+216,12,"No tumors of hematopoietic cells including lymphoma, leukemia, myeloma and related",216
+216,13,No Nutritional deficiency,216
+216,14,No Pancytopenia or bone marrow disorder diagnosis within 7 days,216
+216,15,"No Neutropenia, Agranulocytosis diagnosis within 7 days",216
+216,16,No low neutrophil count within 7 days,216
+216,17,No Anemia diagnosis within 7 days,216
+216,18,No low Hemoglobin measurement in blood within 7 days,216
+216,19,No low Hematocrit measurement in blood within 7 days,216
+217,0,No congenital or genetic thrombocytopenia,217
+217,1,No Platelet count > 150 on index date,217
+218,0,Washout period - 180 days,218
+218,1,Requires hospitalization,218
+218,2,No major trauma in last 14 days,218
+218,3,No major burn in last 14 days,218
+218,4,No major drowning in last 14 days,218
+218,5,No major hypothermia in last 14 days,218
+218,6,No major hyperthermia or hyperpyrexia in last 14 days,218
+218,7,No Sepsis inpatient in last 14 days,218
+218,8,No Sepsis in last 14 days,218
+218,9,No Crush Syndrome in last 14 days,218
+218,10,No March myoglobinuria in last 14 days,218
+218,11,Not due to exertional reasons in last 14 days,218
+218,12,No alcohol intoxication in the last 14 days ,218
+219,0,Has Inpatient or ER visit ,219
+220,0,Angioedema within 3 days  ,220
+220,1,No Cardiac Edema,220
+220,2,No Cellulitis,220
+220,3,No Erysipelas,220
+220,4,No Dermatitis or Eczema,220
+220,5,No Lymphedema ,220
+220,6,No insect bites,220
+221,0,Washout period 30 days,221
+221,1,No Food anaphylaxis on index date,221
+221,2,No anaphylaxis due to substances other than food or drug on index date,221
+221,3,No anaphylaxis due insect bite on index date,221
+221,4,No insect bite or sting,221
+221,5,No Toxic effect of venom,221
+221,6,Accidental poisoning,221
+222,0,Visit is Inpatient or Emergency Room,222
+223,0,Does NOT have hypertensive encephalopathy at baseline ,223
+223,1,Does NOT have Eclampsia at baseline ,223
+224,0,Washout period - 180 days,224
+224,1,Has No Congenital QT Syndrome,224
+225,0,No Systemic Lupus Erythematosus,225
+230,0,has no certain chronic liver disease events in prior 0 - 365 days,230
+230,1,has no Systemic Lupus Erythematosus events in prior 0 - 365 days,230
+233,0,has no events in prior 'clean window' - 180 days,233
+239,0,No hypersomnia in 365 days prior to index and including index,239
+248,0,has no events in prior 'clean window' - 365 days,248
+249,0,has no events in prior 'clean window' - 365 days,249
+251,0,Should have Acute Pancreatitis within 1 day,251
+251,1,Should NOT have Chronic Pancreatitis on or before Acute Pancreatitis,251
+251,2,Should NOT have Hereditary Pancreatitis any time,251
+253,0,Should have Acute Pancreatitis within 1 day,253
+253,1,Should NOT have Chronic Pancreatitis on or before Acute Pancreatitis,253
+253,2,Should NOT have Hereditary Pancreatitis any time,253
+253,3,Should NOT have Alcoholic Pancreatitis on or before Acute Pancreatitis,253
+253,4,Should NOT have evidence Alcoholism or Severe Alcohol related disorders in past 1 year,253
+253,5,Should NOT have evidence Alcohol intoxication in past 30 days,253
+253,6,Should NOT have evidence Cholangitis or Cholecystitis in past 1 year,253
+253,7,Should NOT have evidence Biliary Tract Disease in past in past 1 year,253
+253,8,Should NOT have evidence of recent Endoscopic retrograde cholangiopancreatography,253
+253,9,Should NOT have evidence of Intestinal ischemia including acute mesenteric ischemia,253
+253,10,Should NOT have evidence of Gastrointestinal perforation,253
+253,11,Should NOT have evidence of Intestinal Obstruction,253
+254,0,Adult Age,254
+254,1,Additional Criteria,254
+255,0,"No occurrence of any other specific dementia diagnosis (e.g., VD, Pick’s disease, or Lewy body dementia [LBD]) after the Alzheimer's disease diagnosis date",255
+255,1,No occurrence of Stroke diagnosis within 2 years prior to the Alzheimer's disease diagnosis date,255
+255,2,>= 18 years old,255
+256,0,has no events in prior 'clean window' 183 days,256
+256,1,Remove congenital Facial Palsy,256
+256,2,Not Upper Motor Neuron,256
+264,0,Prior Liver Disease,264
+265,0,Chronic Hepatic Failure,265
+265,1,Viral Hepatitis,265
+265,2,Liver Cirrhosis,265
+265,3,Liver Fibrosis,265
+265,4,Toxic Liver Disease (7d),265
+265,5,Hepatic Necrosis (7d),265
+265,6,Alcohol use disorder,265
+265,7,Alcoholic Hepatitis,265
+265,8,Alcoholic Fatty Liver,265
+265,9,"Malignancies that spread to liver (breast, esophageal, stomach, pancreatic, lung, kidney, melanoma)",265
+265,10,Chronic Hepatic Failure,265
+265,11,Other Chronic Liver Disease,265
+265,12,Ascites (7d),265
+265,13,Portal Hypertension (7d),265
+265,14,History of Liver Transplant,265
+265,15,Cholestasis (7d),265
+265,16,Non-Alcoholic Fatty Liver Disease,265
+265,17,Autoimmune Hepatitis,265
+265,18,Primary Biliary Cholangitis,265
+265,19,Hemochromatosis,265
+265,20,Wilsons Disease,265
+265,21,Neoplasm of liver,265
+265,22,Other liver problems entry event criteria,265
+267,0,Has prior chronic kidney disease,267
+267,1,No ESKD at baseline,267
+267,2,No chronic dialysis at baseline (-365 to 8 days) ,267
+267,3,No Kidney Transplant any time prior ,267
+268,0,Has no prior chronic kidney disease,268
+268,1,No ESKD at baseline,268
+268,2,No chronic dialysis at baseline (-365 to 8 days) ,268
+268,3,No Kidney Transplant any time prior ,268
+269,0,Washout period with no AKI codes,269
+269,1,No ESKD at baseline,269
+269,2,No chronic dialysis at baseline (-365 to 8 days) ,269
+269,3,No Kidney Transplant any time prior ,269
+27,0,No COPD prior,27
+270,0,No normal low Hemoglobin measurement in blood on index date,270
+270,1,No Polycythemia on index date,270
+276,0,Washout - no prior vision loss in 365 days prior,276
+276,1,No eye pathology,276
+277,0,Not a congenital anomaly of hearing,277
+277,1,Has no middle ear related disease,277
+277,2,Has no inner ear related disease,277
+277,3,Has not had audiometry in past 365 days,277
+278,0,Non Chronic Pain,278
+28,0,No prior asthma,28
+283,0,No Prior Chronic Prostatitis,283
+283,1,No history of Prostatitis prior to first prostatitis,283
+283,2,No testicular lesions,283
+283,3,No bladder neoplasm,283
+283,4,No abdominal or inguinal hernia,283
+285,0,Remove subjects with Infectious Myocarditis or Pericarditis,285
+288,0,no Type 1 diabetes mellitus diagnosis on or prior to T2DM,288
+288,1,no secondary diabetes diagnosis on or prior to T2DM,288
+288,2,has at least one diagnosis of T2DM on or within 365d of index date,288
+290,0,Thyroiditis including hypothyroidism and hyperthyroidism,290
+290,1,Excluding alternative causes of hypothyroidism,290
+291,0,Require Gynecomastia diagnosis ,291
+291,1,restrict to males ,291
+292,0,have no chronic hepatic failure on the day of diagnosis ,292
+293,0,have no chronic hepatic failure,293
+294,0,Chronic Hepatic Failure,294
+294,1,Viral Hepatitis,294
+294,2,Liver Cirrhosis,294
+294,3,Liver Fibrosis,294
+294,4,Toxic Liver Disease (7d),294
+294,5,Hepatic Necrosis (7d),294
+294,6,Alcohol use disorder,294
+294,7,Alcoholic Hepatitis,294
+294,8,Alcoholic Fatty Liver,294
+294,9,"Malignancies that spread to liver (breast, esophageal, stomach, pancreatic, lung, kidney, melanoma)",294
+294,10,Chronic Hepatic Failure,294
+294,11,Other Chronic Liver Disease,294
+294,12,Ascites (7d),294
+294,13,Portal Hypertension (7d),294
+294,14,History of Liver Transplant,294
+294,15,Cholestasis (7d),294
+294,16,Non-Alcoholic Fatty Liver Disease,294
+294,17,Autoimmune Hepatitis,294
+294,18,Primary Biliary Cholangitis,294
+294,19,Hemochromatosis,294
+294,20,Wilsons Disease,294
+294,21,Neoplasm of liver,294
+294,22,Other liver problems entry event criteria,294
+295,0,Chronic Hepatic Failure,295
+295,1,Viral Hepatitis,295
+295,2,Liver Cirrhosis,295
+295,3,Liver Fibrosis,295
+295,4,Toxic Liver Disease (7d),295
+295,5,Hepatic Necrosis (7d),295
+295,6,Alcohol use disorder,295
+295,7,Alcoholic Hepatitis,295
+295,8,Alcoholic Fatty Liver,295
+295,9,"Malignancies that spread to liver (breast, esophageal, stomach, pancreatic, lung, kidney, melanoma)",295
+295,10,Chronic Hepatic Failure,295
+295,11,Other Chronic Liver Disease,295
+295,12,Ascites (7d),295
+295,13,Portal Hypertension (7d),295
+295,14,History of Liver Transplant,295
+295,15,Cholestasis (7d),295
+295,16,Non-Alcoholic Fatty Liver Disease,295
+295,17,Autoimmune Hepatitis,295
+295,18,Primary Biliary Cholangitis,295
+295,19,Hemochromatosis,295
+295,20,Wilsons Disease,295
+295,21,Neoplasm of liver,295
+295,22,Other liver problems entry event criteria,295
+298,0,Exclude any event preceded by kidney biopsy in -7 to -1 days,298
+298,1,Exclude chronic kidney disease or dialysis,298
+298,2,Exclude any event that is preceded by renal or glomerular disease -365 to 0,298
+30,0,At least 3 distinct drug eras of TB drugs,30
+300,0,Gender = Female,300
+300,1,Not eligible during a pregnancy,300
+300,2,Not eligible after menopause,300
+318,0,have no chronic hepatic failure on the day of diagnosis ,318
+324,0,No evidence of no pain,324
+332,0,Chronic Pain,332
+344,0,Should not be overlapping with an Inpatient site of care,344
+344,1,Should not be overlapping with an Inpatient Care as defined by procedure or observation codes,344
+344,2,Should not be overlapping with Emergency room site of care,344
+344,3,Should not be overlapping with Urgent Care as defined by procedure or observation codes,344
+346,0,Should not be overlapping with an Inpatient site of care,346
+346,1,Should not be overlapping with an Inpatient Care as defined by procedure or observation codes,346
+346,2,Should not be overlapping with Emergency room site of care,346
+346,3,Should not be overlapping with Urgent Care as defined by procedure or observation codes,346
+358,0,No Chronic Respiratory Failure in past 365 days,358
+45,0,Has a lab test for SARS-Cov-2 test within 3 days,45
+53,0,Have atleast 1 positive,53
+54,0,Has febrile seizure diagnosis ,54
+59,0,No SARS-Cov-2 test,59
+60,0,Positive test result,60
+60,1,Negative test result,60
+63,0,has no events in prior 'clean window' - 365 days,63
+73,0,At least 1 outcome 1 day after or end of observation before end of pregnancy post-2020,73
+73,1,No outcome in the prior 60d,73
+78,0,Limit to inpatient visit,78

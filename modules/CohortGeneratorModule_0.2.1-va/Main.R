@@ -36,7 +36,7 @@ execute <- function(jobContext) {
   
   if (!is.null(jobContext$settings$refactor) &&
       jobContext$settings$refactor) {
-    for (i in 1:length(cohortDefinitionSet)) {
+    for (i in 1:nrow(cohortDefinitionSet)) {
       newSql <- VaTools::translateToCustomVaSqlText(cohortDefinitionSet$sql[i], NULL)
       cohortDefinitionSet$sql[i] <- newSql
     }
